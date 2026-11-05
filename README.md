@@ -9,8 +9,6 @@ Student ID: **73597**
 - [Task Manager](https://vistula-team-project-73597.github.io/vistula-task-manager/)
 - [GitHub repository](https://github.com/vistula-team-project-73597/vistula-task-manager)
 
-## How it works
-
 The frontend uses HTML, CSS and JavaScript. Data is stored in a Supabase PostgreSQL database and accessed through the Supabase REST API using GET, POST, PATCH and DELETE requests.
 
 `config.json` contains the Supabase project URL, public publishable API key and table name `tasks`. The separate demonstration database contains test data only. Row Level Security is enabled with public policies for selecting, inserting, updating and deleting demonstration tasks. All visitors share the same tasks.
