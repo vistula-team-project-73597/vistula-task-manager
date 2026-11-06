@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Contribution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Team Contribution</h1>
+    </header>
+
+    <main style="max-width: 600px; margin: 40px auto; text-align: center; padding: 20px;">
+        <button id="load-contributor" style="padding: 10px 20px; font-size: 1rem; cursor: pointer;">Show Contributor</button>
+        
+        <p style="margin-top: 25px; font-size: 1.2rem;">
+            Contributor Student ID: <span id="contributor-student-id" style="font-weight: bold; color: #007bff;">--</span>
+        </p>
+
+        <div style="margin-top: 40px;">
+            <a href="index.html" style="color: #007bff; text-decoration: none; font-weight: bold;">&larr; Back to Task Manager</a>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('load-contributor').addEventListener('click', async () => {
+            try {
+                const response = await fetch('contribution.json');
+                if (!response.ok) throw new Error('Could not fetch contribution data');
+                
+                const data = await response.json();
+                document.getElementById('contributor-student-id').textContent = data.contributorStudentId;
+            } catch (error) {
+                document.getElementById('contributor-student-id').textContent = 'Error loading ID';
+            }
+        });
+    </script>
+</body>
+</html>
