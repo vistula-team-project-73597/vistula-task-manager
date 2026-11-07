@@ -8,6 +8,9 @@ Student ID: **73597**
 
 - [Task Manager](https://vistula-team-project-73597.github.io/vistula-task-manager/)
 - [GitHub repository](https://github.com/vistula-team-project-73597/vistula-task-manager)
+- [Contributor page](https://vistula-team-project-73597.github.io/vistula-task-manager/contribution.html)
+- [Incoming contribution — 72924](https://github.com/vistula-team-project-73597/vistula-task-manager/pull/1)
+- [Outgoing contribution — 73597](https://github.com/vistula-team-project-72924-new/vistula-task-manager/pull/1)
 
 The frontend uses HTML, CSS and JavaScript. Data is stored in a Supabase PostgreSQL database and accessed through the Supabase REST API using GET, POST, PATCH and DELETE requests.
 
